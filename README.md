@@ -3,7 +3,9 @@ In this app we have setup the JWT authentication for a simple boilerplate applic
 
 Once this base project is setup, please review and follow the post install documentation:
 > [Managing Migrations](https://github.com/Dujota/FastAPI-SQLAlchemy-Migrations-Guide)
+> 
 > [Setting up CORS for FastAPI](https://github.com/Dujota/FastAPI-CORS-Guide)
+> 
 > [Deploying to Heroku](https://github.com/Dujota/FastAPI-Heroku-Deployment-Guide)
 
 ## Getting Started
