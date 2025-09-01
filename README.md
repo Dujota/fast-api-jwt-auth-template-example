@@ -1,6 +1,11 @@
 # Python FastAPI Authorization Solution
 In this app we have setup the JWT authentication for a simple boilerplate application. We have 2 simple models + a user model and respective controllers with serializers to use as a jump off point. We have also included alembic for database migration, with the initial migration already setup to migrate the user model.
 
+Once this base project is setup, please review and follow the post install documentation:
+> [Managing Migrations](https://github.com/Dujota/FastAPI-SQLAlchemy-Migrations-Guide)
+> [Setting up CORS for FastAPI](https://github.com/Dujota/FastAPI-CORS-Guide)
+> [Deploying to Heroku](https://github.com/Dujota/FastAPI-Heroku-Deployment-Guide)
+
 ## Getting Started
 
 ## Cloning the Auth boilerplate
