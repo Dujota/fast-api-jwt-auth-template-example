@@ -1,4 +1,5 @@
 # Python FastAPI Authorization Solution
+In this app we have setup the JWT authentication for a simple boilerplate application. We have 2 simple models + a user model and respective controllers with serializers to use as a jump off point. We have also included alembic for database migration, with the initial migration already setup to migrate the user model.
 
 ## Getting Started
 
@@ -75,7 +76,7 @@ code .
    - Create a database named `teas_db` if it does not already exist:
 
 ```bash
-createdb teas_db
+createdb YOUR_APP_DB
 ```
 
 6. Open the application in Visual Studio Code:
@@ -84,10 +85,12 @@ createdb teas_db
 code .
 ```
 
-7. The database connection string is defined in the `config/environment.py` file:
+7. The database connection string is defined in the `config/environment.py` file which uses environment variables:
+   > create a `.env` file in the root of your project and add the below variables
 
 ```python
-db_URI = "postgresql://<username>@localhost:5432/teas_db"
+DB_URI=db_URI = "postgresql://<username>@localhost:5432/<YOUR_APP_DB>"
+JWT_SECRET=YOUR_SECRET_KEY
 ```
 
 > _Modify your database connection string to use your username as the `<username>`._
@@ -162,13 +165,13 @@ This will allow you to connect using one of the following database connection st
 If **no password is required**:
 
 ```python
-db_URI = "postgresql://<username>@localhost:5432/teas_db"
+db_URI = "postgresql://<username>@localhost:5432/YOUR_APP_DB"
 ```
 
 If **a password is required**:
 
 ```python
-db_URI = "postgresql://<username>:<your_secure_password>@localhost:5432/teas_db"
+db_URI = "postgresql://<username>:<your_secure_password>@localhost:5432/YOUR_APP_DB"
 ```
 
-This ensures that PostgreSQL correctly authenticates and allows access to the `teas_db` database.
+This ensures that PostgreSQL correctly authenticates and allows access to the `YOUR_APP_DB` database.
