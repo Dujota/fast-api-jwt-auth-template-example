@@ -1,17 +1,60 @@
 # Python FastAPI Authorization Solution
 
-## About
-
-This repo contains the solution code for the [Python FastAPI Authorization](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-authorization/canvas-landing-pages/fallback.html) Lesson
-
 ## Getting Started
 
-1. Fork and clone this repo.
+## Cloning the Auth boilerplate
 
-2. Navigate into the project directory:
+Clone this repo down to your machine so you can start the setup stage for your new project: 
 
-```sh
- cd python-fastapi-authorization-solution
+```bash
+git clone https://github.com/Dujota/fast-api-jwt-auth-template-example.git
+```
+
+Once we have the repository on our machines, we can change the name of the directory to `'express-api-hoot-back-end'`:
+
+```bash
+mv fast-api-jwt-auth-template-example <YOUR_APP_NAME>
+```
+
+Next, `cd` into your renamed directory:
+
+```bash
+cd <YOUR_APP_NAME>
+```
+
+Finally, remove the existing `.git` information from this template:
+
+```bash
+rm -rf .git
+```
+
+> Removing the `.git` info is important as this is just a starter template provided gere. You do not need the existing git history for this project.
+
+## GitHub setup
+
+To add this project to GitHub, initialize a new Git repository:
+
+```bash
+git init
+git add .
+git commit -m "init commit"
+```
+
+Make a new repository on [GitHub](https://github.com/) named `<YOUR_PROJECT_NAME>`.
+
+Link your local project to your remote GitHub repo:
+
+```bash
+git remote add origin https://github.com/<github-username>/<YOUR_PROJECT_NAME>.git
+git push origin main
+```
+
+> 🚨 Do not copy the above command. It will not work. Your GitHub username will replace `<github-username>` (including the `<` and `>`) in the URL above.
+
+Open the project's folder in your code editor:
+
+```bash
+code .
 ```
 
 3. Install dependencies (this also creates the virtual environment if it doesn’t exist):
